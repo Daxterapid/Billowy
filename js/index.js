@@ -1,4 +1,4 @@
-async function handleTableSubmit(event) {
+/*async function handleTableSubmit(event) {
   event.preventDefault();
 
   const file = event.target.elements['table-upload'].files[0];
@@ -48,5 +48,9 @@ function readFileJSON(file) {
 function loadTable(object) {
   document.createElement('table');
 
+  
+}*/
+
+function signIn() {
   
 }
