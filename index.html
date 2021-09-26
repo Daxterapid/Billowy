@@ -28,10 +28,29 @@
   </head>
   <body>
     <header>
-      <h1><a href="#">Billowy</a></h1>
-      <button onclick="signInGoogle()">Sign in with Google</button>
+      <h1><a id="title" href="#">Billowy</a></h1>
+      <a id="getting-started" href="#">Getting Started</a>
+      <button id="sign-in" onclick="signInGoogle()" style="cursor:pointer">Sign In with Google</button>
       
     </header>
+
+    <main>
+      <section id="description" class="panel">
+        <h2 style="font-style: italic;">A Small Tool To Manage Paid Chores</h2>
+        <p>verbose description</p>
+      </section>
+
+      <section id="feature-1" class="panel">
+        <h2 style="font-style: italic;">Check off your To Do list</h2>
+        <p>verbose description</p>
+      </section>
+    </main>
+
+    <footer>
+
+    </footer>
+
+
     <!--
     <form onsubmit="handleTableSubmit(event)">
       <label for="table-upload">Import a JSON file</label>
