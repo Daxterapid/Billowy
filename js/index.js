@@ -51,8 +51,6 @@ function loadTable(object) {
   
 }*/
 
-alert('js');
-
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in
@@ -61,19 +59,8 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 
-alert('b1');
-
 function signIn() {
-  alert('pain');
-  try {
-  // Will NOT work when run in a local file
+  // Will NOT work when ran in a local file
   var provider = new firebase.auth.GoogleAuthProvider();
-  alert('AAA');
   var res = firebase.auth().signInWithPopup(provider);
-  alert('BBB');
-  } catch (err) {
-    alert(err);
-  }
 }
-
-alert('end');
