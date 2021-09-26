@@ -68,7 +68,9 @@ function signIn() {
   try {
   // Will NOT work when run in a local file
   var provider = new firebase.auth.GoogleAuthProvider();
+  alert('AAA');
   var res = firebase.auth().signInWithPopup(provider);
+  alert('BBB');
   } catch (err) {
     alert(err);
   }
