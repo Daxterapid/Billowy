@@ -10,7 +10,7 @@
 
     <!--script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script-->
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
-    <script>
+    <script defer>
       // Firebase configuration
       const firebaseConfig = {
         apiKey: "AIzaSyAHc5I6jrCD3FivPIvnSmM7VCN6ar-hJfY",
@@ -26,7 +26,7 @@
       firebase.initializeApp(firebaseConfig);
       alert('sdf');
     </script>
-    <script src="js/index.js"></script>
+    <script src="js/index.js" defer></script>
   </head>
   <body>
     <!--
@@ -43,7 +43,7 @@
       <summary>Details</summary>
       <p id="error-text"></p>
     </details>-->
-    <h1>Main page (pain v1.0.2)</h1>
+    <h1>Main page (pain v1.0.3)</h1>
     <button onclick="signIn()">Sign in with Google</button>
   </body>
 </html>
