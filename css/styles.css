@@ -1,3 +1,29 @@
 #upload-error {
     color: #eb2e2e;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 50px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-family: sans-serif;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+header button {
+    background-color: transparent;
+    border-color: transparent;
+}
