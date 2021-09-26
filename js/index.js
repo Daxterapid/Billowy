@@ -52,6 +52,7 @@ function loadTable(object) {
 }*/
 
 firebase.auth().onAuthStateChanged(function(user) {
+  alert(JSON.stringify(user));
   if (user) {
     // User is signed in
 
