@@ -51,6 +51,16 @@ function loadTable(object) {
   
 }*/
 
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in
+
+    window.location.replace("home/");
+  }
+});
+
 function signIn() {
-  
+  // Will NOT work when run in a local file
+  var provider = new firebase.auth.GoogleAuthProvider();
+  firebase.auth().signInWithPopup(provider);
 }
