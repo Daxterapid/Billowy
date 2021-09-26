@@ -51,6 +51,8 @@ function loadTable(object) {
   
 }*/
 
+alert('js');
+
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in
@@ -58,6 +60,8 @@ firebase.auth().onAuthStateChanged(function(user) {
     window.location.replace("home/");
   }
 });
+
+alert('b1');
 
 function signIn() {
   alert('pain');
@@ -70,3 +74,5 @@ function signIn() {
     alert(err);
   }
 }
+
+alert('end');
