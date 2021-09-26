@@ -60,7 +60,7 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 
-function signIn() {
+function signInGoogle() {
   // Will NOT work when ran in a local file
   var provider = new firebase.auth.GoogleAuthProvider();
   var res = firebase.auth().signInWithPopup(provider);

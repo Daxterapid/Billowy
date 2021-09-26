@@ -28,5 +28,12 @@
   </head>
   <body>
     <h1>Home page</h1>
+
+    <p>You haven't joined any groups.</p>
+    <form onsubmit="groupJoin(event)">
+      <label for="group-id">Join a group</label>
+      <input type="text" id="group-id" name="group-id">
+      <input type="submit" value="Join">
+    </form>
   </body>
 </html>
