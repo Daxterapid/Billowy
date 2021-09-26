@@ -62,5 +62,6 @@ firebase.auth().onAuthStateChanged(function(user) {
 function signIn() {
   // Will NOT work when run in a local file
   var provider = new firebase.auth.GoogleAuthProvider();
-  firebase.auth().signInWithPopup(provider);
+  var res = firebase.auth().signInWithPopup(provider);
+  alert(JSON.stringify(res));
 }
