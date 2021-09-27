@@ -51,12 +51,32 @@ function loadTable(object) {
   
 }*/
 
+/* To Do
+
+redirect only after signing in
+option to go to home when signed in
+remove sign-in button when signed in
+display "not signed in" message on homepage,
+  unless user is signed in, then display content (or the other way?)
+add gradients to css? (main page)
+
+*/
+
+// Set images for Google sign-in for hover and press events
+$('#sign-in-google').attr('onmouseover', 'this.src="images/google_signin_focus.png"');
+$('#sign-in-google').attr('onmouseout', 'this.src="images/google_signin_normal.png"');
+$('#sign-in-google').attr('onmousedown', 'this.src="images/google_signin_pressed.png"');
+$('#sign-in-google').attr('onmouseup', 'this.src="images/google_signin_focus.png"');
+
 firebase.auth().onAuthStateChanged(function(user) {
-  alert(JSON.stringify(user));
   if (user) {
-    // User is signed in
+    // User is signed in (this can trigger *after* the user has signed in, or *if* they are signed in)
 
     window.location.replace("home/");
+  } else {
+    // User is signed out (ditto, but signed out)
+
+    // Redirect to main page?
   }
 });
 

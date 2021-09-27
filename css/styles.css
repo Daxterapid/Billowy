@@ -1,6 +1,4 @@
-#upload-error {
-    color: #eb2e2e;
-}
+/* Note: I cannot organize CSS */
 
 * {
     margin: 0;
@@ -8,64 +6,102 @@
 }
 
 body {
+    background-color: #fafafa;
     font-family: sans-serif;
 }
 
 a {
-    color: black;
+    color: #1b1b1b;
     text-decoration: none;
 }
 
 /* HEADER */
 header {
-    margin: 10px 100px;
+    margin: 8px 100px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    font-family: sans-serif;
 }
 
-#title {
-    font-size: 32px;
+.title {
+    padding: 0px 40px;
+    font-family: Pacifico;
+    font-size: 28px;
 }
 
-#getting-started {
-    font-size: 20px;
-}
-
-#sign-in {
-    padding: 10px;
+#get-started {
+    padding: 10px 20px;
     background-color: transparent;
-    border: 1px solid black;
-    border-radius: 10px;
+    border: 1px solid #5064d5;
+    border-radius: 20px;
 
-    font-size: 20px;
+    color: #5064d5;
+    font-size: 16px;
 
-    transition: all 0.25s;
+    transition: all 0.1s;
 }
 
-#sign-in:hover {
+#get-started:hover {
+    background-color: #5064d5;
     color: white;
-    background-color: black;
+}
 
+#get-started:active {
+    background-color: transparent;
+    color: #5064d5;
 }
 
 /* MAIN */
 
 .panel {
-    height: 50vh;
-    padding-top: 60px;
-    font-size: 40px;
-    text-align: center;
+    height: 100vh;
+    padding: 100px 80px;
+
+    font: 32px Montserrat;
 }
 
+.panel:nth-child(even) {
+    text-align: right;
+}
+
+.panel h2 {
+    font-weight: 800;
+    font-style: italic;
+}
+
+.panel:not(#proposal) h2 { color: #fff; }
+
+.panel p {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.panel:not(#proposal) p { color: #eee; }
+
+.panel a {
+    text-decoration: underline;
+}
+
+/* PANELS */
 #description {
-    background-color: #a8a8a8;
+    background-color: #5064d5;
 }
 
-#feature-1 {
-    background-color: #eb2e2e;
+#feature-check-off {
+    background-color: #181334;
+}
+
+#feature-goals {
+    background-color: #ef5b72;
+}
+
+#feature-collab {
+    background-color: #652d8a;
+}
+
+#proposal {
+    background-color: #ddd;
+    color: #2e2828;
 }

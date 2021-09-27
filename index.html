@@ -7,8 +7,11 @@
     <title>Billowy</title>
 
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:ital,wght@0,300;1,800&display=swap" rel="stylesheet">
 
-    <!--script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
     <script defer>
       // Firebase configuration
@@ -28,40 +31,42 @@
   </head>
   <body>
     <header>
-      <h1><a id="title" href="#">Billowy</a></h1>
-      <a id="getting-started" href="#">Getting Started</a>
-      <button id="sign-in" onclick="signInGoogle()" style="cursor:pointer">Sign In with Google</button>
+      <h1 class="title"><a href="#">Billowy</a></h1>
+      <a id="get-started" href="#proposal">Get started</a>
+      <input type="image" id="sign-in-google" src="images/google_signin_normal.png" onclick="signInGoogle()">
       
     </header>
 
     <main>
       <section id="description" class="panel">
-        <h2 style="font-style: italic;">A Small Tool To Manage Paid Chores</h2>
-        <p>verbose description</p>
+        <h2>A small tool to manage paid chores.</h2>
+        <p>With Billowy, you have everything you need for tracking house chores.</p>
       </section>
 
-      <section id="feature-1" class="panel">
-        <h2 style="font-style: italic;">Check off your To Do list</h2>
-        <p>verbose description</p>
+      <section id="feature-check-off" class="panel">
+        <h2>Check off your to-do list.</h2>
+        <p>Billowy makes it easy and satisfying to check off an item.</p>
+      </section>
+
+      <section id="feature-goals" class="panel">
+        <h2>Set goals and reach them in days.</h2>
+        <p>When setting goals, you're able to manage your time well.</p>
+      </section>
+
+      <section id="feature-collab" class="panel">
+        <h2>Collaborate with other people.</h2>
+        <p>You can add people to a group to know who does what.</p>
+      </section>
+
+      <section id="proposal" class="panel">
+        <h2>Getting started?</h2>
+        <p>We currently only support Google as our sign-in method.</p>
+        <p>You can also read up on our manual <a href="#">here</a>. (currently unavailable)</p>
       </section>
     </main>
 
     <footer>
-
+      
     </footer>
-
-
-    <!--
-    <form onsubmit="handleTableSubmit(event)">
-      <label for="table-upload">Import a JSON file</label>
-      <input type="file" id="table-upload" name="table-upload" accept=".json"><br>
-      <input type="submit" value="Import">
-    </form>
-    <p id='upload-error' hidden></p>
-
-    <details id="error-details" hidden>
-      <summary>Details</summary>
-      <p id="error-text"></p>
-    </details>-->
   </body>
 </html>

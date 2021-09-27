@@ -7,8 +7,12 @@
     <title>Billowy - Home</title>
 
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:ital,wght@0,300;1,800&display=swap" rel="stylesheet">
 
-    <!--script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script> <!-- Unused -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.1.0/uuidv4.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
     <script defer>
       // Firebase configuration
@@ -27,13 +31,29 @@
     <script src="../js/home.js" defer></script>
   </head>
   <body>
-    <h1>Home page</h1>
+    <header>
+      <h1 class="title"><a href="../">Billowy</a></h1>
+      
+    </header>
 
-    <p>You haven't joined any groups.</p>
+    <p>You haven't joined any groups. (yes this page looks ugly af I'm working on it X{)</p>
     <form onsubmit="groupJoin(event)">
       <label for="group-id">Join a group</label>
       <input type="text" id="group-id" name="group-id">
       <input type="submit" value="Join">
     </form>
+
+    <!--
+    <form onsubmit="handleTableSubmit(event)">
+      <label for="table-upload">Import a JSON file</label>
+      <input type="file" id="table-upload" name="table-upload" accept=".json"><br>
+      <input type="submit" value="Import">
+    </form>
+    <p id='upload-error' hidden></p>
+
+    <details id="error-details" hidden>
+      <summary>Details</summary>
+      <p id="error-text"></p>
+    </details>-->
   </body>
 </html>
